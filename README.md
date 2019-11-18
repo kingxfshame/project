@@ -1,4 +1,5 @@
 # Документация по первому заданию
+## [Готовый проект PHP](https://shumilo17.thkit.ee/project/shumilo_project/)
 ## Задание
 + Создать XML файл в который будет 2 или 3 логичиских диапазона.
 + Файл должен содержать следующие поля :
@@ -159,4 +160,20 @@ function poisk(){
  </tbody>
   </table>
 ```
-## [Готовый проект PHP](https://shumilo17.thkit.ee/project/shumilo_project/)
+## Документация кода XSLT
+
+### Функция №1
+#### Вывод первой буквы с первого имени в XML файле :
+```
+<xsl:value-of select="substring(/nimed/nimi[1]/emakeelne, 1, 1)"/>
+```
+### Функция №2
+#### Количество букв в первом имени:
+```
+<xsl:value-of select="string-length(/nimed/nimi[1]/emakeelne)"/>
+```
+### Функция №3
+####  Количество данных в XML :
+```
+<xsl:value-of select="count(/nimed/nimi)"/>
+```
